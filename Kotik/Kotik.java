@@ -1,3 +1,5 @@
+public static void main(String[] args)
+
 public class Kotik {
     int prettiness;
     int weight;
