@@ -29,6 +29,7 @@ public class Kotik {
     }
 
     public static void main(String args[]) {
+    Object Kotik = new Kotik.setKotik();
     System.out.println(livestock + " kotiks were created.");
     }
     
