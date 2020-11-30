@@ -15,7 +15,7 @@ public class Kotik {
     }
 
     boolean eat(int satiety, String food) {
-        System.out.print(name + " is having a " + food + " omnomnom... =^_^=\n");
+        System.out.print(name + " is having a " + food + "! omnomnom... =^_^=\n");
         satiety++;
         return true;
     }
@@ -82,23 +82,23 @@ public class Kotik {
         for (int i = 1; i < 25; i++) {
             switch ((int)(Math.random() * 5 + 1)) {
                 case 1:
-                    System.out.print(i + " ");
+                    System.out.print(i + ": ");
                     eat();
                     break;
                 case 2:
-                    System.out.print(i + " ");
+                    System.out.print(i + ": ");
                     sleep();
                     break;
                 case 3:
-                    System.out.print(i + " ");    
+                    System.out.print(i + ": ");    
                     stomp();
                     break;
                 case 4:
-                    System.out.print(i + " ");
+                    System.out.print(i + ": ");
                     purr();
                     break;
                 case 5:
-                    System.out.print(i + " ");
+                    System.out.print(i + ": ");
                     tear();
                     break;
             }
