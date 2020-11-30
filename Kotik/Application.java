@@ -12,8 +12,8 @@ public static void main(String args[]) {
     
     System.out.println("\nKotik " + kotik_2.getName() + " weights " + kotik_2.getWeight() + " kilos");
     
-    System.out.println(kotik_1.getMeow().equals(kotik_2.getMeow()));
+    System.out.println("\nMeows are equeal: " + kotik_1.getMeow().equals(kotik_2.getMeow()));
 
-    System.out.prinln(Kotik.class.getLive)
+    System.out.println("\nKotiks livestock is: " + kotik_2.getLivestock() + "\n");
     }
 }

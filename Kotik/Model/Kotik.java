@@ -6,7 +6,7 @@ public class Kotik {
     private String name;
     private String meow;
     private int satiety = 10;
-    private static int livestock;
+    private int livestock;
 
     boolean eat(int satiety) {
         System.out.print(name + " is having a feast! omnomnom... =^_^=\n");
@@ -28,7 +28,7 @@ public class Kotik {
     boolean sleep() {
         switch (satiety) {
             case 0:
-                System.out.print(name + " is HUNGRY and won'n sleep! Feed the damn kotik!");
+                System.out.print(name + " is HUNGRY and won'n sleep! Feed the damn kotik! ");
                 eat();
                 return false;
             default:
@@ -42,7 +42,7 @@ public class Kotik {
     boolean stomp() {
         switch (satiety) {
             case 0:
-                System.out.print(name + " is HUNGRY and won't tigidik! Feed the damn kotik!");
+                System.out.print(name + " is HUNGRY and won't tigidik! Feed the damn kotik! ");
                 eat();
                 return false;
             default:
@@ -55,7 +55,7 @@ public class Kotik {
     boolean purr() {
         switch (satiety) {
             case 0:
-                System.out.print(name + " is HUNGRY and won't purr! Feed the damn kotik!");
+                System.out.print(name + " is HUNGRY and won't purr! Feed the damn kotik! ");
                 eat();
                 return false;
             default:
@@ -68,7 +68,7 @@ public class Kotik {
     boolean tear() {
         switch (satiety) {
             case 0:
-                System.out.print(name + " is HUNGRY and won't tear your funriture! Feed the damn kotik!");
+                System.out.print(name + " is HUNGRY and won't tear your funriture! Feed the damn kotik! ");
                 eat();
                 return false;
             default:
@@ -126,15 +126,15 @@ public class Kotik {
     }
 
     public int getLivestock(){
-        return this.livestock;
+        return livestock;
     }
     
 public Kotik(){
+    livestock++;
 }
 
 public Kotik(int prettiness, String name, int weight, String meow){
     setKotik(prettiness, name, weight, meow);
-    livestock++;
 } 
    
     public void setKotik(int prettiness, String name, int weight, String meow) {
@@ -142,5 +142,7 @@ public Kotik(int prettiness, String name, int weight, String meow){
         this.weight = weight;
         this.name = name;
         this.meow = meow;
+        this.livestock = livestock;
+        livestock++;
     }
 }
