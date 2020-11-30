@@ -6,56 +6,111 @@ public class Kotik {
     private String name;
     private String meow;
     private int satiety = 10;
-    private static int livestock = 0;
+    private static int livestock;
 
-    void sleap(){
-        switch(satiety){
+    boolean eat(int satiety) {
+        System.out.print(name + " is having a feast! omnomnom... =^_^=\n");
+        this.satiety += satiety;
+        return true;
+    }
+
+    boolean eat(int satiety, String food) {
+        System.out.print(name + " is having a " + food + " omnomnom... =^_^=\n");
+        satiety++;
+        return true;
+    }
+
+    boolean eat() {
+        eat(1, "pizza");
+        return true;
+    }
+    
+    boolean sleep() {
+        switch (satiety) {
             case 0:
-                System.out.println(name + " is hungry and won'n sleep! Feed the damn kotik!");
-                break;
+                System.out.print(name + " is HUNGRY and won'n sleep! Feed the damn kotik!");
+                eat();
+                return false;
             default:
-            System.out.println(name + " is having a nap! ...sweet...dreams...full...of...mice...");
-       
+                System.out.println(name + " is having a nap! ...sweet...dreams...full...of...mice...");
+                satiety--;
+                return true;
+
         }
     }
 
-    void stompFloor(){
-        switch(satiety){
+    boolean stomp() {
+        switch (satiety) {
             case 0:
-                System.out.println(name + " is hungry and won't tigidik! Feed the damn kotik!");
-                break;
+                System.out.print(name + " is HUNGRY and won't tigidik! Feed the damn kotik!");
+                eat();
+                return false;
             default:
-            System.out.println(name + ": TIGIDIK-TIGIDIK-TIGIDIK!!!!");
-         }
+                System.out.println(name + ": TIGIDIK-TIGIDIK-TIGIDIK!!!!");
+                satiety--;
+                return true;
+        }
     }
 
-    void purr(){
-        switch(satiety){
+    boolean purr() {
+        switch (satiety) {
             case 0:
-                System.out.println(name + " is hungry and won't purr! Feed the damn kotik!");
-                break;
+                System.out.print(name + " is HUNGRY and won't purr! Feed the damn kotik!");
+                eat();
+                return false;
             default:
-            System.out.println(name + ": Prrrr...Prrrr....Prrrr...");
-         }
+                System.out.println(name + ": Prrrr...Prrrr....Prrrr...");
+                satiety--;
+                return true;
+        }
+    }
+
+    boolean tear() {
+        switch (satiety) {
+            case 0:
+                System.out.print(name + " is HUNGRY and won't tear your funriture! Feed the damn kotik!");
+                eat();
+                return false;
+            default:
+                System.out.println(name + " is tearing your furnitute. Scratch.. Scrath... NOT MY FABULUOS SOFA!!!");
+                satiety--;
+                return true;
+        }
+    }
+
+    public void liveAnotherDay() {
+        for (int i = 1; i < 25; i++) {
+            switch ((int)(Math.random() * 5 + 1)) {
+                case 1:
+                    System.out.print(i + " ");
+                    eat();
+                    break;
+                case 2:
+                    System.out.print(i + " ");
+                    sleep();
+                    break;
+                case 3:
+                    System.out.print(i + " ");    
+                    stomp();
+                    break;
+                case 4:
+                    System.out.print(i + " ");
+                    purr();
+                    break;
+                case 5:
+                    System.out.print(i + " ");
+                    tear();
+                    break;
+            }
+        }
     }
     
-
-    void tearSofa(){
-        switch(satiety){
-            case 0:
-                System.out.println(name + " is hungry and won't tear your funriture! Feed the damn kotik!");
-                break;
-            default:
-            System.out.println(name + " is tearing your furnitute. Scratch.. Scrath... NOT MY FABULUOS SOFA!!!");
-         }
-    }
-
     public int getPrettiness(){
         return this.prettiness;
     }
 
     public int getWeight(){
-            return this.weight;
+        return this.weight;
     }
     
     public String getName(){
@@ -63,39 +118,29 @@ public class Kotik {
     }
 
     public String getMeow(){
-            return this.meow;
+        return this.meow;
     }
 
     public int getSatiety(){
         return this.satiety;
     }
 
-    public static void main(String args[]){
-    System.out.println(livestock + " kotiks were created.");
+    public int getLivestock(){
+        return this.livestock;
     }
     
-    void eat(){
-        System.out.println(name + " is having a feast! omnomnom... =^_^=");
-        satiety++;
-    }
+public Kotik(){
+}
 
-    
-    public Kotik(int prettiness, int weight, String name, String meow, int satiety) {
+public Kotik(int prettiness, String name, int weight, String meow){
+    setKotik(prettiness, name, weight, meow);
+    livestock++;
+} 
+   
+    public void setKotik(int prettiness, String name, int weight, String meow) {
         this.prettiness = prettiness;
         this.weight = weight;
         this.name = name;
         this.meow = meow;
-        this.satiety = satiety;
-        livestock++;
-    }
-  
-
-    void setKotik(int prettiness, String name, int weight, String meow, int satiety) {
-        this.prettiness = prettiness;
-        this.weight = weight;
-        this.name = name;
-        this.meow = meow;
-        this.satiety = satiety;
-        livestock++;
     }
 }
