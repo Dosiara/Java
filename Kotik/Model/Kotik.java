@@ -16,7 +16,7 @@ public class Kotik {
 
     boolean eat(int satiety, String food) {
         System.out.print(name + " is having a " + food + "! omnomnom... =^_^=\n");
-        satiety++;
+        this.satiety+=satiety;
         return true;
     }
 
