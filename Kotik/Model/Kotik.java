@@ -5,37 +5,8 @@ public class Kotik {
     private int weight;
     private String name;
     private String meow;
-    private static int satiety = 10;
+    private int satiety = 10;
     private static int livestock = 0;
-
-    public int getPrettiness(){
-        return this.prettiness;
-    }
-
-    public int getWeight(){
-            return this.weight;
-    }
-    
-    public String getName(){
-        return this.name;
-    }
-
-    public String getMeow(){
-            return this.meow;
-    }
-
-    public int getSatiety(){
-        return this.satiety;
-    }
-
-    public static void main(String args[]){
-    System.out.println(livestock + " kotiks were created.");
-    }
-    
-    void eat(){
-        System.out.println(name + " is having a feast! omnomnom... =^_^=");
-        satiety++;
-    }
 
     void sleap(){
         switch(satiety){
@@ -78,9 +49,37 @@ public class Kotik {
             System.out.println(name + " is tearing your furnitute. Scratch.. Scrath... NOT MY FABULUOS SOFA!!!");
          }
     }
-  
-    
 
+    public int getPrettiness(){
+        return this.prettiness;
+    }
+
+    public int getWeight(){
+            return this.weight;
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+
+    public String getMeow(){
+            return this.meow;
+    }
+
+    public int getSatiety(){
+        return this.satiety;
+    }
+
+    public static void main(String args[]){
+    System.out.println(livestock + " kotiks were created.");
+    }
+    
+    void eat(){
+        System.out.println(name + " is having a feast! omnomnom... =^_^=");
+        satiety++;
+    }
+
+    
     public Kotik(int prettiness, int weight, String name, String meow, int satiety) {
         this.prettiness = prettiness;
         this.weight = weight;
