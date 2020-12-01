@@ -1,5 +1,5 @@
 package animals;
 
-public class Amoeba {
+public class Amoeba extends Carnivore{
     
 }

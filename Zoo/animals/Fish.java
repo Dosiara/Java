@@ -1,5 +1,5 @@
 package animals;
 
-public class Fish {
+public class Fish extends Carnivore{
     
 }
