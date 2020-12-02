@@ -1,5 +1,5 @@
 package animals;
 
-public class Fish extends Carnivore{
-    
+public class Fish extends Carnivore implements run, swim, fly, voice {
+
 }

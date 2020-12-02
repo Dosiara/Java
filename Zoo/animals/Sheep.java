@@ -1,5 +1,5 @@
 package animals;
 
-public class Sheep extends Carnivore{
-    
+public class Sheep extends Herbivore implements run, swim, fly, voice {
+
 }
