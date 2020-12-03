@@ -17,7 +17,7 @@ public class Duck extends Carnivore implements Run, Swim, Fly, Voice {
     }
 
     public String voice() {
-        System.out.printf("The duck says %s\n", voice);
+        System.out.printf("The duck goes %s.\n", voice);
         return voice;
     }
 }

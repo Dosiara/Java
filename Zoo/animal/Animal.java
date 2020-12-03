@@ -6,14 +6,10 @@ import food.Grass;
 public abstract class Animal {
 
     public String voice() {
-        return "ololo";
+        return "80085";
     }
 
-    public boolean eats(Food food) {
-        if (food instanceof Grass) {
-            return true;
-        } else
-            return false;
+    public boolean eat(Food food) {
+        return false;
     }
-
 }

@@ -1,15 +1,15 @@
 package animal;
 
-public class Cow extends Herbivore implements Run, Voice {
-
-    public String voice = "mooo";
+public class Cow extends Herbivore implements Voice {
+    String voice = "mooo";
+    String name = "Cow";
 
     public void run() {
-        System.out.println("Happy cow is galloping around.");
+        System.out.println("Jolly cow jumps around.");
     }
 
     public String voice() {
-        System.out.printf("The cow says %s\n", voice);
+        System.out.printf("The cow goes %s.\n", voice);
         return voice;
     }
 }

@@ -9,7 +9,7 @@ public class Sheep extends Herbivore implements Run, Voice {
     }
 
     public String voice() {
-        System.out.printf("The sheep says %s\n", voice);
+        System.out.printf("The sheep goes %s.\n", voice);
         return voice;
     }
 }

@@ -1,5 +1,6 @@
 package food;
 
-public class Buttercup extends Grass{
-
+public class Buttercup extends Grass {
+    public Buttercup() {
+    }
 }

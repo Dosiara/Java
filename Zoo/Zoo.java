@@ -11,12 +11,24 @@ public class Zoo {
         Fish fish = new Fish();
         Sheep sheep = new Sheep();
 
+        Bacteria bacteria = new Bacteria();
+        Brain brain = new Brain();
+        Buttercup buttercup = new Buttercup();
+        Clover clover = new Clover();
+        Crustacian crustacian = new Crustacian();
+        Dandelion dandelion = new Dandelion();
+
         Worker.getVoice(amoeba);
         Worker.getVoice(cow);
         Worker.getVoice(deer);
         Worker.getVoice(duck);
         Worker.getVoice(fish);
         Worker.getVoice(sheep);
+
+        System.out.println(brain instanceof Meat);
+
+        amoeba.eat();
+        amoeba.isDeep();
 
     }
 }
