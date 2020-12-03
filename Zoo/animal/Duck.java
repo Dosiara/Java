@@ -2,7 +2,7 @@ package animal;
 
 public class Duck extends Carnivore implements Run, Swim, Fly, Voice {
 
-    String voice = "Quack";
+    String voice = "quack";
 
     public void run() {
         System.out.println("Graceful duck makes a step.");

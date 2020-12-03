@@ -2,7 +2,7 @@ package animal;
 
 public class Cow extends Herbivore implements Run, Voice {
 
-    String voice = "Moooo";
+    public String voice = "mooo";
 
     public void run() {
         System.out.println("Happy cow is galloping around.");
