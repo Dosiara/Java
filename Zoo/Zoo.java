@@ -1,9 +1,10 @@
 import worker.*;
+import animal.*;
 import food.*;
-import animals.*;
 
 public class Zoo {
     public static void main(String args[]) {
-
+        Amoeba ami = new Amoeba();
+        ami.eat();
     }
 }
