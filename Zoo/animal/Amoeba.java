@@ -2,7 +2,6 @@ package animal;
 
 public class Amoeba extends Carnivore implements Swim {
     String name = "Amoeba";
-    String voice = "SILENCE!";
 
     public String getName() {
         return name;
