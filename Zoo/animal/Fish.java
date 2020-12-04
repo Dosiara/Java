@@ -10,7 +10,7 @@ public class Fish extends Carnivore implements Swim, Fly {
     }
 
     public void swim() {
-        System.out.println("The fish swims as the fish in water.");
+        System.out.println("The fish swims as the fish in water");
     }
 
     public void fly() {

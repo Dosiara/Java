@@ -18,19 +18,23 @@ public class Zoo {
         Crustacian crustacian = new Crustacian();
         Dandelion dandelion = new Dandelion();
 
+        System.out.println();
         Worker.getVoice(cow);
         Worker.getVoice(deer);
         Worker.getVoice(duck);
         Worker.getVoice(sheep);
 
+        System.out.println();
         Worker.feed(sheep, crustacian);
         Worker.feed(sheep, clover);
         Worker.feed(amoeba, clover);
         Worker.feed(amoeba, brain);
 
+        System.out.println();
         Swim[] pond = { duck, amoeba, duck, fish, fish };
         for (int i = 0; i < pond.length; i++) {
             pond[i].swim();
         }
+        System.out.println();
     }
 }

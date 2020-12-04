@@ -10,7 +10,7 @@ public class Deer extends Herbivore implements Run, Voice {
     }
 
     public void run() {
-        System.out.println("Angry deer walks towards you.");
+        System.out.println("Angry deer walks towards you");
     }
 
     public String voice() {

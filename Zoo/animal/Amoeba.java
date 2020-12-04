@@ -9,6 +9,6 @@ public class Amoeba extends Carnivore implements Swim {
     }
 
     public void swim() {
-        System.out.println("Amoeba is not very good at swimming.");
+        System.out.println("Amoeba is not very good at swimming");
     }
 }
