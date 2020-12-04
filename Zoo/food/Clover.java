@@ -1,6 +1,9 @@
 package food;
 
 public class Clover extends Grass {
-    public Clover() {
+    String name = "clover";
+
+    public String getName() {
+        return name;
     }
 }

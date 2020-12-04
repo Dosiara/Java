@@ -1,9 +1,10 @@
 package animal;
 
-public class Amoeba extends Carnivore implements Swim {
-    public void eat() {
-        String animal = "Amoeba";
-        System.out.println(animal + " is eating");
+public class Amoeba extends Carnivore implements Swim, Voice {
+    String name = "Amoeba";
+
+    public String getName() {
+        return name;
     }
 
     public void swim() {

@@ -25,10 +25,8 @@ public class Zoo {
         Worker.getVoice(fish);
         Worker.getVoice(sheep);
 
-        System.out.println(brain instanceof Meat);
-
-        amoeba.eat();
-        amoeba.isDeep();
+        amoeba.eat(clover);
+        amoeba.eat(brain);
 
     }
 }

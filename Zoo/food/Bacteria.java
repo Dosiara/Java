@@ -1,7 +1,9 @@
 package food;
 
 public class Bacteria extends Meat {
+    String name = "bacteria";
 
-    public Bacteria() {
+    public String getName() {
+        return name;
     }
 }

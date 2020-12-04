@@ -1,6 +1,9 @@
 package food;
 
 public class Crustacian extends Meat {
-    public Crustacian() {
+    String name = "crustacian";
+
+    public String getName() {
+        return name;
     }
 }

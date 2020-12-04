@@ -1,6 +1,9 @@
 package food;
 
 public class Brain extends Meat {
-    public Brain() {
+    String name = "brain";
+
+    public String getName() {
+        return name;
     }
 }

@@ -1,6 +1,9 @@
 package food;
 
 public abstract class Meat extends Food {
-    public Meat() {
+    String name = "meat";
+
+    public String getName() {
+        return name;
     }
 }

@@ -1,6 +1,9 @@
 package food;
 
 public abstract class Food {
-    public Food() {
+    String name = "food";
+
+    public String getName() {
+        return name;
     }
 }

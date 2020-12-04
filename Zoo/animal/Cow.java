@@ -4,12 +4,16 @@ public class Cow extends Herbivore implements Voice {
     String voice = "mooo";
     String name = "Cow";
 
+    public String getName() {
+        return name;
+    }
+
     public void run() {
         System.out.println("Jolly cow jumps around.");
     }
 
     public String voice() {
-        System.out.printf("The cow goes %s.\n", voice);
+        System.out.printf("The cow goes %s\n", voice);
         return voice;
     }
 }

@@ -1,15 +1,23 @@
 package animal;
 
-import food.Food;
-import food.Grass;
+import food.*;
 
 public abstract class Animal {
+    String name = "animal";
+
+    public String getName() {
+        return name;
+    }
 
     public String voice() {
         return "80085";
     }
 
-    public boolean eat(Food food) {
-        return false;
+    public void eat(Food food) {
+        if (food instanceof Meat) {
+            System.out.println(this.getName() + " eats " + food.getName());
+        } else {
+            System.out.println(this.getName() + " does not eat " + food.getName());
+        }
     }
 }

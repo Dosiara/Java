@@ -1,6 +1,9 @@
 package food;
 
 public class Buttercup extends Grass {
-    public Buttercup() {
+    String name = "buttercap";
+
+    public String getName() {
+        return name;
     }
 }
