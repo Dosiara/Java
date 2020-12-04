@@ -27,6 +27,10 @@ public class Zoo {
 
         amoeba.eat(clover);
         amoeba.eat(brain);
+        cow.eat(clover);
+        cow.eat(brain);
+
+        Worker.feed(sheep, crustacian);
 
     }
 }

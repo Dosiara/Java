@@ -6,7 +6,7 @@ interface Voice {
     String voice = "voice";
 
     default public String voice() {
-        System.out.println("The " + name + " goes " + voice);
+        System.out.println("The " + this.name + " goes " + this.voice);
         return voice;
     }
 

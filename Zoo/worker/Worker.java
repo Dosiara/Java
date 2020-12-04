@@ -1,9 +1,14 @@
 package worker;
 
-import animal.Animal;
+import animal.*;
+import food.*;
 
 public class Worker {
     public static void getVoice(Animal animal) {
         animal.voice();
+    }
+
+    public static void feed(Animal animal, Food food) {
+        animal.eat(food);
     }
 }

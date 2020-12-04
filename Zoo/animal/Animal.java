@@ -14,10 +14,5 @@ public abstract class Animal {
     }
 
     public void eat(Food food) {
-        if (food instanceof Meat) {
-            System.out.println(this.getName() + " eats " + food.getName());
-        } else {
-            System.out.println(this.getName() + " does not eat " + food.getName());
-        }
     }
 }
