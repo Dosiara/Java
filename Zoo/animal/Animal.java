@@ -3,7 +3,8 @@ package animal;
 import food.*;
 
 public abstract class Animal {
-    String name = "animal";
+    String name = "Animal";
+    public String voice;
 
     public String getName() {
         return name;

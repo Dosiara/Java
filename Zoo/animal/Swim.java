@@ -1,6 +1,6 @@
 package animal;
 
-interface Swim {
+public interface Swim {
     void swim();
 
     default void isDeep() {

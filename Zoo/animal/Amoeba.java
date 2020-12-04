@@ -1,6 +1,6 @@
 package animal;
 
-public class Amoeba extends Carnivore implements Swim, Voice {
+public class Amoeba extends Carnivore implements Swim {
     String name = "Amoeba";
     String voice = "SILENCE!";
 
@@ -9,6 +9,6 @@ public class Amoeba extends Carnivore implements Swim, Voice {
     }
 
     public void swim() {
-        System.out.println("I'm not very good at swimming.");
+        System.out.println("Amoeba is not very good at swimming.");
     }
 }

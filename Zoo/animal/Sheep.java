@@ -3,7 +3,7 @@ package animal;
 public class Sheep extends Herbivore implements Run, Voice {
 
     String voice = "beah";
-    String name = "sheep";
+    String name = "Sheep";
 
     public String getName() {
         return name;

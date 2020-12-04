@@ -1,14 +1,11 @@
 package animal;
 
-interface Voice {
+public interface Voice {
 
     String name = "animal";
     String voice = "voice";
 
-    default public String voice() {
-        System.out.println("The " + this.name + " goes " + this.voice);
-        return voice;
-    }
+    String voice();
 
     default String isLoud() {
         System.out.println("WASSAAAAAAAAAAAAAPP!?!??!!!!!");

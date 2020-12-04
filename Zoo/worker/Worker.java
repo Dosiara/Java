@@ -4,7 +4,7 @@ import animal.*;
 import food.*;
 
 public class Worker {
-    public static void getVoice(Animal animal) {
+    public static void getVoice(Voice animal) {
         animal.voice();
     }
 

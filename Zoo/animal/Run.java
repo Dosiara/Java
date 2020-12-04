@@ -1,6 +1,6 @@
 package animal;
 
-interface Run {
+public interface Run {
     void run();
 
     default void isFast() {

@@ -1,6 +1,6 @@
 package animal;
 
-interface Fly {
+public interface Fly {
     void fly();
 
     default void isHigh() {

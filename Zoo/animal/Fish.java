@@ -3,7 +3,7 @@ package animal;
 public class Fish extends Carnivore implements Swim, Fly {
 
     String voice = "...";
-    String name = "fish";
+    String name = "Fish";
 
     public String getName() {
         return name;
