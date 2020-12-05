@@ -1,6 +1,6 @@
 package animal;
 
-public class Cow extends Herbivore implements Voice {
+public class Cow extends Herbivore implements Run, Voice {
     String voice = "mooo";
     String name = "Cow";
 
